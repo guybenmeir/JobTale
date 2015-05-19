@@ -1,0 +1,53 @@
+package gameEngine;
+
+public abstract class Entity {
+ private int height, width;
+ private double x,y;
+ 
+	 public Entity(int height, int width)
+	 {
+		  this.height = height;
+		  this.width = width;
+	 }
+	
+	 public int getHeight()
+	 {
+		 return height;
+	 }
+	
+	 public void setHeight(int height)
+	 {
+		 this.height = height;
+	 }
+	
+	 public int getWidth()
+	 {
+		 return width;
+	 }
+	
+	 public void setWidth(int width)
+	 {
+		 this.width = width;
+	 }
+	
+	 public double getX()
+	 {
+		 return x;
+	 }
+	
+	 public void setX(double x)
+	 {
+		 this.x = x;
+	 }
+	
+	 public double getY()
+	 {
+		 return y;
+	 }
+	
+	 public void setY(double y)
+	 {
+		 this.y = y;
+	 }
+	 public abstract int render(double x, double y);
+}
